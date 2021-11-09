@@ -7,11 +7,12 @@ const changeTitle = (menu) => {
 	const { name, kitchen, price, stars } = menu;
 
 	sectionHeadingMenu.insertAdjacentHTML('beforeend', `<h2 class="section-title restaurant-title">${name}</h2>`);
-	sectionHeadingMenu.insertAdjacentHTML('beforeend', `<div class="card-info">
-																												<div class="rating">${stars}</div>
-																												<div class="price">От ${price} ₽</div>
-																												<div class="category">${kitchen}</div>
-																											</div>`)
+	sectionHeadingMenu.insertAdjacentHTML('beforeend', `
+				<div class="card-info">
+					<div class="rating">${stars}</div>
+					<div class="price">От ${price} ₽</div>
+					<div class="category">${kitchen}</div>
+				</div>`)
 }
 
 const renderItems = (data) => {
